@@ -235,5 +235,18 @@ function hideOrShowQuiz(){
     quizzContainer.classList.toggle("hide");
     scoreContainer.classList.toggle("hide");
 }
+
+//reiniciar quizz 
+const restartBtn = document.querySelector("#restart")
+
+restartBtn.addEventListener("click", function(){
+
+    //zerar o jogo
+    actualQuestion = 0;
+    point = 0;
+    hideOrShowQuiz();
+    init();
+
+})
 //inicializacao do quiz
 init();
